@@ -36,8 +36,8 @@ Thanks to [W3C](https://www.w3schools.com/howto/howto_js_accordion.asp). They ha
 
 ### Links
 
-- Solution URL: [on github](https://github.com/DR-KSP-VIRUS/results-summary-component-main.git)
-- Live Site URL: [on vercel](https://results-summary-component-main-liart.vercel.app/)
+- Solution URL: [on github](https://github.com/DR-KSP-VIRUS/faq-accordion-main.git)
+- Live Site URL: [on vercel](https://faq-accordion-main-lovat.vercel.app/)
 
 ## My process
 
@@ -62,7 +62,7 @@ Good tutorial about web development can be found here [W3C](https://www.w3school
 
 ## Author
 
-- Website - [vercel app](https://results-summary-component-main-liart.vercel.app/)
+- Website - [vercel app](https://faq-accordion-main-lovat.vercel.app/)
 - Frontend Mentor - [@DR-KSP-VIRUS](https://www.frontendmentor.io/profile/DR-KSP-VIRUS)
 
 ## Acknowledgments
