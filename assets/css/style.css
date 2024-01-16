@@ -8,6 +8,7 @@
 :root{
     --White: hsl(0, 0%, 100%);
     --Light-pink: hsl(275, 100%, 97%);
+    --Pink: hsla(277, 100%, 79%, 0.514);
     --Grayish-purple: hsl(292, 16%, 49%);
     --Dark-purple: hsl(292,42%, 14%);
 }
@@ -52,24 +53,19 @@ main{
 }
 
 .content{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
     max-width: 320px;
-    align-items: flex-start;
-    justify-content: center;
     background-color: var(--White);
     border-radius: 8px;
     padding: 0 1rem;
     margin-top: 30% ;
-    box-shadow: 0 2px 10px var(--Grayish-purple), 0 2px 5px var(--Light-pink);
+    box-shadow: 0 20px 20px var(--Pink);
 }
 
 .title{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-family: 'WorkSans-Bold';
 }
 
@@ -77,16 +73,10 @@ main{
     margin-right: 1rem;
     width: 30px;
     height: 100%;
-
 }
 
 .info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 2rem;
-    width: 100%;
+    margin-top: .5rem;
 }
 
 .topic{
@@ -101,6 +91,7 @@ main{
 
 .topic img{
     width: 28px;
+    cursor: pointer;
 }
 
 .topic span{
@@ -111,14 +102,18 @@ main{
     color: var(--Grayish-purple);
     cursor: pointer;
 }
+
 .text-content{
-    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .54s ease-out;
     color: var(--Grayish-purple);
     padding-top: 1rem;
 }
 
-.info:first-of-type p{
-    display: block;
+
+.info:first-of-type .text-content{
+    max-height: max-content;
     color: var(--Grayish-purple);
 } 
 
@@ -129,20 +124,23 @@ main{
 
 
 @media screen and (min-width: 960px) {
-    #mobile{
-        display: none;
-    }
 
     main{
         background-image: url("../images/background-pattern-desktop.svg");
         background-repeat: no-repeat;
+        background-size: contain;
     }
 
     .content{
-        margin-top: 30px;
-        max-width: 500px;
+        margin-top: 100px;
+        max-width: 480px;
+        height: 100%;
     }
     .topic span{
         width: 100%;
+    }
+
+    .title{
+        padding: 1rem 0;
     }
 }
